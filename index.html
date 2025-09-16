@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consultoría Marketing & KPIs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <!-- Chart.js para el tablero de KPIs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="nav">
+    <a class="logo" href="#"><i class="ri-pulse-line"></i> GrowthLab</a>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#kpis">KPIs</a>
+      <a href="#casos">Casos</a>
+      <a href="#planes">Planes</a>
+      <a class="btn-primary" href="#contacto">Agendar</a>
+    </nav>
+    <button class="burger" aria-label="Menú"><i class="ri-menu-3-line"></i></button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1>Campañas que <span>crecen</span> y KPIs que <span>importan</span></h1>
+      <p>Diseñamos y optimizamos campañas de marketing digital orientadas a resultados medibles:
+        CAC, ROAS, LTV y más. Color, data y creatividad en una sola estrategia.</p>
+      <div class="hero__cta">
+        <a class="btn-primary" href="#contacto">Quiero un diagnóstico</a>
+        <a class="btn-outline" href="#kpis">Ver tablero de KPIs</a>
+      </div>
+      <div class="hero__badges">
+        <span><i class="ri-bar-chart-box-line"></i> Data-Driven</span>
+        <span><i class="ri-flashlight-line"></i> Creatividad</span>
+        <span><i class="ri-seedling-line"></i> Crecimiento</span>
+      </div>
+    </div>
+    <figure class="hero__image">
+      <img alt="Estrategia digital"
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop" />
+    </figure>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section">
+    <h2 class="section__title">Servicios</h2>
+    <p class="section__subtitle">De la estrategia al performance, con reporting claro y accionable.</p>
+    <div class="grid grid-3">
+      <article class="card reveal">
+        <img alt="Social Ads"
+          src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1400&auto=format&fit=crop" />
+        <h3><i class="ri-megaphone-line"></i> Paid Media 360°</h3>
+        <p>Meta Ads, Google Ads, TikTok Ads. Segmentación avanzada, A/B testing y optimización de
+          pujas por objetivo.</p>
+        <ul class="list">
+          <li>ROAS objetivo</li>
+          <li>Embudo full-funnel</li>
+          <li>Creatividades iterativas</li>
+        </ul>
+      </article>
+
+      <!-- Analítica & Tracking -->
+      <article class="card reveal">
+        <img alt="Analytics"
+          src="https://assets.everspringpartners.com/dims4/default/c4f0d0d/2147483647/strip/true/crop/1468x632+0+0/resize/1600x688!/format/webp/quality/90/?url=http%3A%2F%2Feverspring-brightspot.s3.us-east-1.amazonaws.com%2Fca%2F3b%2Fd9e41e954f32a1a103cfbdd7efee%2Fbusiness-analytics.jpg" />
+        <h3><i class="ri-line-chart-line"></i> Analítica & Tracking</h3>
+        <p>GA4, Tag Manager, Data Studio/Looker, medición de eventos y modelos de atribución.</p>
+        <ul class="list">
+          <li>CAC, LTV, CR, AOV</li>
+          <li>Mapeo de eventos</li>
+          <li>Alertas automáticas</li>
+        </ul>
+      </article>
+
+      <!-- Creatividad & CRO -->
+      <article class="card reveal">
+        <img alt="Creatividad"
+          src="https://toppingcreativo.com.mx/topping/wp-content/uploads/2024/07/21-1200x600.png" />
+        <h3><i class="ri-contrast-drop-2-line"></i> Creatividad & CRO</h3>
+        <p>Mensajes, visuales y landing pages que convierten. Pruebas multivariantes y heatmaps.</p>
+        <ul class="list">
+          <li>Copy + Diseño</li>
+          <li>UX de conversión</li>
+          <li>Velocity testing</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Proceso -->
+  <section class="section section-alt">
+    <h2 class="section__title">Proceso Ágil</h2>
+    <div class="timeline">
+      <div class="step reveal"><span>1</span><h4>Diagnóstico</h4><p>Auditoría de cuentas, tracking y oportunidades.</p></div>
+      <div class="step reveal"><span>2</span><h4>Estrategia</h4><p>Definición de KPIs, audiencias y mensajes.</p></div>
+      <div class="step reveal"><span>3</span><h4>Activación</h4><p>Implementación multi-canal y creatividades.</p></div>
+      <div class="step reveal"><span>4</span><h4>Optimización</h4><p>Iteraciones semanales y learnings accionables.</p></div>
+      <div class="step reveal"><span>5</span><h4>Escalamiento</h4><p>Automatizaciones, LTV y expansión de medios.</p></div>
+    </div>
+  </section>
+
+  <!-- KPIs -->
+  <section id="kpis" class="section">
+    <h2 class="section__title">Tablero de KPIs</h2>
+    <p class="section__subtitle">Visibilidad total de tu rendimiento en tiempo real.</p>
+    <div class="kpi-cards">
+      <div class="kpi reveal">
+        <span class="kpi__label">ROAS</span>
+        <span class="kpi__value" data-target="4.2">0</span>
+      </div>
+      <div class="kpi reveal">
+        <span class="kpi__label">CAC (USD)</span>
+        <span class="kpi__value" data-target="7.9">0</span>
+      </div>
+      <div class="kpi reveal">
+        <span class="kpi__label">Conv. Rate</span>
+        <span class="kpi__value" data-target="3.6">0</span>
+      </div>
+      <div class="kpi reveal">
+        <span class="kpi__label">CTR</span>
+        <span class="kpi__value" data-target="2.8">0</span>
+      </div>
+    </div>
+    <div class="chart-wrap reveal">
+      <canvas id="lineChart" height="120"></canvas>
+    </div>
+  </section>
+
+  <!-- Casos -->
+  <section id="casos" class="section section-alt">
+    <h2 class="section__title">Casos de Éxito</h2>
+    <div class="grid grid-3">
+      <article class="case card reveal">
+        <img alt="Ecommerce moda"
+          src="https://empresaexterior.com/upload/images/11_2020/6535_ecommercemoda.jpg" />
+        <div class="case__body">
+          <h3>Moda eCommerce</h3>
+          <p>+63% en ventas y ROAS 5.1 en 90 días con creatividades UGC y audiencias lookalike.</p>
+          <span class="tag">Meta & TikTok</span>
+        </div>
+      </article>
+      <article class="case card reveal">
+        <img alt="Educación online"
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop" />
+        <div class="case__body">
+          <h3>EdTech</h3>
+          <p>–28% CAC con embudos por programa y automatización de nurtures.</p>
+          <span class="tag">Google Search</span>
+        </div>
+      </article>
+      <article class="case card reveal">
+        <img alt="Gastronomía"
+          src="https://www.peru.travel/Contenido/General/Imagen/es/950/1.1/gastronomia-peruana-platos-tipicos.desktop.jpg" />
+        <div class="case__body">
+          <h3>Gastronomía</h3>
+          <p>+40% reservas con campañas locales, reseñas y landing optimizada.</p>
+          <span class="tag">Local Campaigns</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Planes -->
+  <section id="planes" class="section">
+    <h2 class="section__title">Planes</h2>
+    <div class="pricing">
+      <div class="price card reveal">
+        <h3>Starter</h3>
+        <p>Para validar y aprender rápido.</p>
+        <ul class="list">
+          <li>1 canal (Meta o Google)</li>
+          <li>2 creatividades/mes</li>
+          <li>Reporte mensual</li>
+        </ul>
+        <a class="btn-outline" href="#contacto">Elegir</a>
+      </div>
+      <div class="price card featured reveal">
+        <h3>Growth</h3>
+        <p>Optimización constante y escala.</p>
+        <ul class="list">
+          <li>2–3 canales</li>
+          <li>4 creatividades/mes</li>
+          <li>Reporte quincenal + alertas</li>
+        </ul>
+        <a class="btn-primary" href="#contacto">Elegir</a>
+      </div>
+      <div class="price card reveal">
+        <h3>Pro</h3>
+        <p>Data avanzada y automatizaciones.</p>
+        <ul class="list">
+          <li>Multi-canal</li>
+          <li>Experimentación continua</li>
+          <li>Dashboards en Looker</li>
+        </ul>
+        <a class="btn-outline" href="#contacto">Elegir</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section section-alt">
+    <h2 class="section__title">Lo que dicen</h2>
+    <div class="grid grid-3">
+      <blockquote class="quote card reveal">
+        <p>“Por fin un equipo que habla en KPIs y los cumple.”</p>
+        <footer>— Ana R., Retail</footer>
+      </blockquote>
+      <blockquote class="quote card reveal">
+        <p>“Bajamos CAC y subimos LTV con cambios simples y consistentes.”</p>
+        <footer>— Carlos M., EdTech</footer>
+      </blockquote>
+      <blockquote class="quote card reveal">
+        <p>“Creatividad con método. Repetiría siempre.”</p>
+        <footer>— Lucía T., Gastronomía</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section contact">
+    <div class="contact__content">
+      <h2 class="section__title">Agenda tu diagnóstico</h2>
+      <p class="section__subtitle">Cuéntanos tu objetivo y en 48h te proponemos un plan de acción.</p>
+      <form class="form reveal" action="#" onsubmit="return false;">
+        <div class="form__grid">
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Sitio / Instagram" />
+          <select required>
+            <option value="">Objetivo principal</option>
+            <option>Ventas</option>
+            <option>Leads</option>
+            <option>Branding</option>
+          </select>
+          <select required>
+            <option value="">Canal prioritario</option>
+            <option>Meta Ads</option>
+            <option>Google Ads</option>
+            <option>TikTok Ads</option>
+          </select>
+        </div>
+        <textarea rows="4" placeholder="Cuéntanos brevemente tu situación actual"></textarea>
+        <button class="btn-primary" id="btnEnviar"><i class="ri-send-plane-2-line"></i> Enviar</button>
+        <p class="form__msg" id="formMsg" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <!-- Video con overlay y texto -->
+    <figure class="contact__image reveal" style="position:relative; overflow:hidden; border-radius:16px;">
+      <video autoplay muted loop playsinline style="width:100%; height:auto; border-radius:16px; display:block;">
+        <source src="https://www.pexels.com/es-es/download/video/7687999/" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+      </video>
+      <div style="position:absolute; inset:0; background:rgba(0,0,0,.45); display:flex; align-items:center; justify-content:center; border-radius:16px;">
+        <h3 style="color:#fff; font-size:28px; font-weight:700; text-align:center;">Conversemos hoy</h3>
+      </div>
+    </figure>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> GrowthLab · Marketing Digital & KPIs</p>
+    <div class="footer__links">
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="#">Contacto</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
